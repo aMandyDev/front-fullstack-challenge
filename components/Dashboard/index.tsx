@@ -82,6 +82,8 @@ const Dashboard: React.FC = () => {
         setModalOpen(true);
     }
     const handleLogout = () => {
+        localStorage.removeItem('@chalenge-Token');
+        localStorage.removeItem('hunterId');
         router.push('/login');
     };
 
