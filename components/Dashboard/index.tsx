@@ -21,12 +21,14 @@ const Dashboard: React.FC = () => {
         try {
             if (!isAuthenticated()) {
                 router.push('/login');
+            } else {
+                const hunterId = localStorage.getItem('hunterId');
+                const res: any = api.get(`/v1/fullStackChalenge/hunter?hunterId=${hunterId}`).then((response) => {
+                    setHunter(response.data);
+                });
+                console.log('login', res.data)
             }
-            const hunterId = localStorage.getItem('hunterId');
-            const res: any = api.get(`/v1/fullStackChalenge/hunter?hunterId=${hunterId}`).then((response) => {
-                setHunter(response.data);
-            });
-            console.log('login', res.data)
+
         } catch (error) {
             console.error('Error', error);
         }
