@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { Card, Container, Wrapper, InitialsAvatar, CardWrapper, FilterContainer, FilterSelect, NoPokemon, Modal } from './styles';
+import { Card, Container, Wrapper, CardWrapper, FilterContainer, FilterSelect, Modal, ButtonLogout } from './styles';
 import Pokemon from '../../public/assets/pik_inicial.png'
 import ComponentWithIcon from '../TitleWithIcon';
 import { isAuthenticated } from '../auth';
@@ -9,7 +9,6 @@ import api from '../api';
 import ModalHunterPokemon from '../ModalHunterPokemon/indext';
 
 const Dashboard: React.FC = () => {
-    const initials = "AM";
     const [filter, setFilter] = useState('');
     const [myTypes, setMyTypes] = useState<string[]>([]);
     const [selectedPokemon, setSelectedPokemon] = useState<any>(null);
@@ -78,20 +77,22 @@ const Dashboard: React.FC = () => {
         router.reload();
     };
 
-
     const handlePokemonHunt = () => {
         setModalOpen(true);
     }
+    const handleLogout = () => {
+        !isAuthenticated;
+        router.push('/login');
+    };
+
     return (
         <Wrapper>
+            <button className="logoutButton" onClick={handleLogout}>Sair</button>
             <Container>
                 {filterCards().length === 0 ? (
                     <>
                         <div className='messageNoPoke'>
-                            <div className='avatarName'>
-                                <InitialsAvatar size={70}>{initials}</InitialsAvatar>
-                            </div>
-                            <h1>Você não tem nenhum Pokémon!</h1>
+                            <h1>Bem vindo! Você não tem nenhum Pokémon!</h1>
                             <Image
                                 src={Pokemon}
                                 alt="pokemon"
@@ -102,9 +103,6 @@ const Dashboard: React.FC = () => {
                     </>
                 ) : (
                     <>
-                        <div className='avatarName'>
-                            <InitialsAvatar size={70}>{initials}</InitialsAvatar>
-                        </div>
                         <h1>Meus Pokémons</h1>
                         <FilterContainer>
                             <p>Organizar Por:</p>
