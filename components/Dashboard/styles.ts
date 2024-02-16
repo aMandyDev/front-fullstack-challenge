@@ -17,8 +17,14 @@ export const Wrapper = styled.div`
                 background-color: aquamarine;
             }
         }
+    .containerButton{
+        display: flex;
+        justify-content: end;
+    }
+        
     .logoutButton {
-        position: fixed;
+        position: relative;
+        justify-content: end;
         top: 1.25rem;
         right: 1.25rem;
         background-color: blue;
@@ -31,6 +37,7 @@ export const Wrapper = styled.div`
         padding: 1rem 2rem;
         border-radius: 6px;
         cursor: pointer;
+        margin: 1rem;
 }
     .logoutButton:hover {
         background-color: #000000;
@@ -51,6 +58,7 @@ export const Container = styled.div`
             padding-top: 10rem;
             padding-bottom: 5rem;
             margin: auto;
+            font-weight: 600;
         }
         img {
             display: flex;
@@ -135,13 +143,6 @@ export const Card = styled.label`
     }
 `;
 
-export const ButtonLogout = styled.input`
-    width: 7rem;
-    padding: 1rem;
-    border-radius: 50%;
-    background-color: aqua;
-`
-
 export const Modal = styled.div`
     .modalContent {
         display: flex;
@@ -157,9 +158,12 @@ export const Modal = styled.div`
         padding: 1.25rem;
         border-radius: 5px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        .inputName{
-            padding: 0.5rem;
-        }
+        .buttonName{
+            display: flex;
+            .inputName{
+                padding: 0.5rem;
+            }
+        }        
 
         button {
             display: flex;

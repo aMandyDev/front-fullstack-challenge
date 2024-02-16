@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Wrapper = styled.div`
+  margin: auto;
+`
+
 export const Container = styled.div`
   display: flex;
   margin: 3rem auto;
