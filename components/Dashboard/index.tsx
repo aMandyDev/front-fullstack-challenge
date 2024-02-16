@@ -96,7 +96,7 @@ const Dashboard: React.FC = () => {
             </div>
             <Container>
 
-                {filterCards().length === 0 ? (
+                {hunter.pokemons.length === 0 ? (
                     <>
                         <div className='messageNoPoke'>
                             <h1>Bem vindo! Você não tem nenhum Pokémon!</h1>

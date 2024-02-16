@@ -17,9 +17,9 @@ O layout foi criado priorizando a experiência do usuário em dispositivos móve
 
 Aqui estão algumas capturas de tela das telas do projeto:
 
-1. ![Imagem 1](/front-fullstack-chalenge/docsProject/ProjetoLayout1.png)
+1. ![Imagem 1](./docsProject/ProjetoLayout1.png)
 
-2. ![Imagem 2](/front-fullstack-chalenge/docsProject/ProjetoLayout2.png)
+2. ![Imagem 2](./docsProject/ProjetoLayout2.png)
 
 
 ## Como Utilizar
