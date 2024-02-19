@@ -27,7 +27,7 @@ Aqui estão algumas capturas de tela das telas do projeto:
 1. Clone este repositório para o seu ambiente de desenvolvimento.
 2. Abra o projeto em seu editor de código preferido.
 3. Abra o projeto da pasta front-fulltack-chalenge em um servidor local ou emulador para visualizar as telas.
-4. Para criar um novo cadastro será necessário autorizar o e-mail do cadastro em: https://bff-ms-fullstack-778f0df92c20.herokuapp.com/api/bffmsfullstackchalenge/docs#/api/postV1FullstackchalengeWhitelistEmail
+4. Para criar um novo cadastro será necessário autorizar o e-mail do cadastro em: https://bff-fullstack-chalenge-8a02420026da.herokuapp.com/api/bffmsfullstackchalenge/docs#/api/postV1FullstackchalengeWhitelistEmail
 5. Experimente as funcionalidades de login, cadastro e jogo de caça de Pokémons.
 
 ## Tecnologias
@@ -42,7 +42,7 @@ https://fullstack-challenge-c788d5a65abf.herokuapp.com/login
 
 ## Link do Back
 
-https://bff-ms-fullstack-778f0df92c20.herokuapp.com/api/bffmsfullstackchalenge/docs
+https://bff-fullstack-chalenge-8a02420026da.herokuapp.com/api/bffmsfullstackchalenge/docs
 
 ## Run Application
 
