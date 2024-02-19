@@ -38,7 +38,7 @@ Aqui estão algumas capturas de tela das telas do projeto:
 
 ## Link Front
 
-https://fullstack-challenge-c788d5a65abf.herokuapp.com/login
+https://front-fullstack-chalenge-23a85934fb4a.herokuapp.com/login
 
 ## Link do Back
 
