@@ -170,7 +170,7 @@ export const Modal = styled.div`
   left: 50%;
   top: 50%;
   width: 18rem;
-  height: 35rem;
+  height: 40rem;
   @media (min-width: 700px) {
     height: 50rem;
   }
@@ -208,6 +208,9 @@ export const ModalContent = styled.div`
     padding: 0.7rem;
     border: none;
     box-shadow: none;
+  }
+  .close {
+    background-color: red;
   }
 
   .types,

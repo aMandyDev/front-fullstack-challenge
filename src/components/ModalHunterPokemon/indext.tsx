@@ -74,8 +74,8 @@ const ModalHunterPokemon: React.FC = () => {
           <Image
             src={pokemon.image}
             alt={pokemon.name}
-            width={200}
-            height={230}
+            width={180}
+            height={190}
           />
           <AllInfo>
             <HeaderInfos>

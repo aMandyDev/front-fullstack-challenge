@@ -56,7 +56,7 @@ const Dashboard: React.FC = () => {
       return typesPokeHunter?.indexOf(item) === index
     })
     setMyTypes(filterTypes)
-  }, [hunter])
+  }, [])
 
   const handleFilterChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setFilter(e.target.value)
@@ -179,24 +179,6 @@ const Dashboard: React.FC = () => {
                               {index < pokemon.types.length - 1}
                             </span>
                           ))}
-                          {pokemon.types.map((type: string, index: number) => (
-                            <span className="types-card" key={index}>
-                              {captalize(type)}
-                              {index < pokemon.types.length - 1}
-                            </span>
-                          ))}
-                          {pokemon.types.map((type: string, index: number) => (
-                            <span className="types-card" key={index}>
-                              {captalize(type)}
-                              {index < pokemon.types.length - 1}
-                            </span>
-                          ))}
-                          {pokemon.types.map((type: string, index: number) => (
-                            <span className="types-card" key={index}>
-                              {captalize(type)}
-                              {index < pokemon.types.length - 1}
-                            </span>
-                          ))}
                         </p>
                       </TypePoke>
                     </div>
@@ -289,7 +271,9 @@ const Dashboard: React.FC = () => {
                 )}
               </div>
             </AllInfo>
-            <button onClick={() => setSelectedPokemon(null)}>Fechar</button>
+            <button className="close" onClick={() => setSelectedPokemon(null)}>
+              Fechar
+            </button>
           </ModalContent>
         </Modal>
       )}

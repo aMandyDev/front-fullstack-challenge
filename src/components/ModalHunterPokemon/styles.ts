@@ -33,7 +33,7 @@ export const Modal = styled.div`
   left: 50%;
   top: 50%;
   width: 18rem;
-  height: 37rem;
+  height: 45rem;
 `
 
 export const ModalContent = styled.div`
@@ -43,7 +43,7 @@ export const ModalContent = styled.div`
     width: 5px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #c4c4c4;
+    background: green;
     border-radius: 4px;
   }
   &::-webkit-scrollbar-thumb:hover {
