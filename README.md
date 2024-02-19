@@ -1,6 +1,6 @@
 # Teste de Login, Cadastro e Caça de Pokémons
 
-Este projeto consiste em um teste de implementação de funcionalidades de login, cadastro e um mini jogo de caça de Pokémons. 
+Este projeto consiste em um teste de implementação de funcionalidades de login, cadastro e um mini jogo de caça de Pokémons.
 
 ## Planejamento Inicial
 
@@ -13,6 +13,7 @@ O projeto foi planejado com as seguintes telas:
 ### Layout Responsivo
 
 O layout foi criado priorizando a experiência do usuário em dispositivos móveis.Porém, a responsividade foi desenvolvida para Tablet e Desktope tenham a mesma experiência.
+
 ## Imagens Layout Inicial
 
 Aqui estão algumas capturas de tela das telas do projeto:
@@ -20,7 +21,6 @@ Aqui estão algumas capturas de tela das telas do projeto:
 1. ![Imagem 1](./docsProject/ProjetoLayout1.png)
 
 2. ![Imagem 2](./docsProject/ProjetoLayout2.png)
-
 
 ## Como Utilizar
 
@@ -31,16 +31,18 @@ Aqui estão algumas capturas de tela das telas do projeto:
 5. Experimente as funcionalidades de login, cadastro e jogo de caça de Pokémons.
 
 ## Tecnologias
+
 - NextJs
 - Styled Components
 - Typescript
 
 ## Link Front
-https://fullstack-challenge-c788d5a65abf.herokuapp.com/loginv
+
+https://fullstack-challenge-c788d5a65abf.herokuapp.com/login
 
 ## Link do Back
-https://bff-ms-fullstack-778f0df92c20.herokuapp.com/api/bffmsfullstackchalenge/docs
 
+https://bff-ms-fullstack-778f0df92c20.herokuapp.com/api/bffmsfullstackchalenge/docs
 
 ## Run Application
 
@@ -49,6 +51,7 @@ How to run the application
 ```
 npm run dev
 ```
+
 ## Autor
 
 Amanda Conceição Gomes
